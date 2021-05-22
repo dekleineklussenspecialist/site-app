@@ -11,8 +11,14 @@
 		<script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 	</head>
 	<style>
-	header{opacity: 0.9;}
-	body{background-color: #c2b49c;}
+	header{
+		opacity: 0.95;
+		z-index: 999999999999999;
+		position: relative;
+	}
+	body{background-color: #c2b49c; 
+		position: relative; /*for scroll spy*/
+	}
 	main{margin-top: 75px;}
 	.blog-footer {
 		padding: 2.5rem 0;
@@ -21,11 +27,9 @@
 		background-color: #f9f9f9;
 		border-top: .05rem solid #e5e5e5;
 	}
-	.logos{max-width: 80vw;}
-
-	.art2{background-color: #343a40;}
-	.art4{background-color: #343a40;}
-
+	.logos{max-width: 80vw; }
+.small-logo{max-width: 600px;width: 30vw;}
+	.navbar{z-index: 9999;}
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -33,10 +37,20 @@
 		margin-left: 0;
 		padding-top: 40px;
 		padding-bottom: 20px;
+		scroll-margin-top: 75px;
 	}
-
+#navbar:target::before {
+    content: '';
+    display: block;
+    height:      180px;
+    margin-top: -180px;
+}
+.card{background-color: #f6f6f6;}
+.bg-dark{
+	background-color: #3b5075!important;}
 	/* Medium devices (tablets, less than 992px)*/
 	@media (max-width: 767.98px) {
+		.row {scroll-margin-top: 125px;}
 	main{margin-top: 125px}
 		.logo-text{margin-bottom: 10px;}
 		.navbar .container, .navbar .container-fluid{justify-content: center;}
@@ -46,9 +60,14 @@
 
 
 	</style>
-	<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+	<body
+		data-bs-spy="scroll"
+		data-bs-target="#navbar"
+		data-bs-offset="350"
+		tabindex="0"
+		>
 		<header>
-			<nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 				<div class="container" >
 					<img src="logo.svg" class="logo-text" alt="De kleine klussen specialist">
 					<ul class="nav nav-pills" >
@@ -69,45 +88,105 @@
 			</nav>
 		</header>
 		<main class="fluid-container">
-			
-			
-			<div class="row art1">
-				<div class="container text-center">
-					<h1 class="display-4 mb-4" >Title</h1>
-					<h2 class="display-4 mb-4" >Sub Title</h2>
+			<div class="row">
+				<div class="container text-center  mb-4">
+					<img src="logo2.svg"  class="small-logo mb-4"  alt="Circle with house and tools">
+					<div class="jumbotron" style="background-color: #cabca5;">
+					  <h1 class="display-4">Voor uw kleine klussen!</h1>
+					  <p class="lead">Van reparaties to installaties.</p>
+					</div>
 				</div>
 			</div>
-			<!-- <div class="row story art1" id="Diensten"></div> -->
-
-			<!-- <div class="row story art2"></div> -->
-			<div class="row art2">
-				<div class="container text-center">
+			<div class="row bg-dark" id="Diensten">
+				<div class="container text-center  mb-4">
 					<h1 class="display-4 mb-4 text-white" >Diensten</h1>
-					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
+					<div class="row justify-content-md-center">
+					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+					    <div class="card">
+							<img src="http://placekitten.com/202/200" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+					    <div class="card">
+							<img src="http://placekitten.com/201/200" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+					    <div class="card">
+							<img src="http://placekitten.com/200/201" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+					    <div class="card">
+							<img src="http://placekitten.com/200/200" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+					    <div class="card">
+							<img src="http://placekitten.com/210/200" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+					    <div class="card">
+							<img src="http://placekitten.com/230/200" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					  </div>
+					</div>
 				</div>
 			</div>
-			<!-- <div class="row story art2" id="Tarieven"></div> -->
+			<div class="row" id="Tarieven">
+				<div class="container text-center mb-4">
+					<h1 class="display-4" >Tarieven</h1>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="card  mb-4">
+								<div class="card-body">
+									<h5 class="card-title">30$</h5>
+									<p class="card-text">34 ex btw.</p>
+									<hr>
 
-			<!-- <div class="row story art3"></div> -->
-			<div class="row art3">
-				<div class="container text-center">
-					<h1 class="display-4 mb-4 text-white" >Tarieven</h1>
-					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
-				</div>
-			</div>
-			<!-- <div class="row story art3" id="Recenties"></div> -->
-			
-			<!-- <div class="row story art4"></div> -->
-			<div class="row art4">
-				<div class="container text-center  text-white">
-					<h1 class="display-4 mb-4" >Recenties</h1>
-					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
-				</div>
-			</div>
-			<!-- <div class="row story art4" id="Contact"></div> -->
+									<p class="card-text">voorrijkostern blablbla</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<img src="logo2.svg"  class="small-logo"  alt="Circle with house and tools">
+						</div>
 
-			<!-- <div class="row story art5"></div> -->
-			<div class="row art5">
+					</div>
+				</div>
+			</div>
+			<div class="row bg-dark" id="Recenties">
+				<div class="container text-center  text-whit">
+					<h1 class="display-4 mb-4 text-white" >Recenties</h1>
+					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
+				</div>
+			</div>
+			<div class="row art5" id="Contact">
 				<div class="container text-center">
 					<h1 class="display-4 mb-4  text-white" >Contact</h1>
 					<div style="overflow: hidden; transform: translateY(-85px);">
@@ -115,9 +194,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- <div class="row story art5"></div> -->
-
 		</main>
 		<footer class="blog-footer">
 			<p>Geregistreerd K.v.K <a href="https://getbootstrap.com/">132451235</a> by <a href="https://zimonh.at">zimoh.at</a>.</p>
