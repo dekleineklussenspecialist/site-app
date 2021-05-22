@@ -11,10 +11,9 @@
 		<script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 	</head>
 	<style>
-		
-	/*
-	* Footer
-	*/
+	header{opacity: 0.9;}
+	body{background-color: #c2b49c;}
+	main{margin-top: 75px;}
 	.blog-footer {
 		padding: 2.5rem 0;
 		color: #727272;
@@ -22,90 +21,26 @@
 		background-color: #f9f9f9;
 		border-top: .05rem solid #e5e5e5;
 	}
-	.blog-footer p:last-child {
-		margin-bottom: 0;
-	}
 	.logos{max-width: 80vw;}
-	body{position: relative;}
 
-.top-top-story{ height: 95px; }
- .story{ height: 67px; }
-	.art1{background-color: #c2b49c;}
 	.art2{background-color: #343a40;}
-	.art3{background-color: #c2b49c;}
 	.art4{background-color: #343a40;}
-	.art5{background-color: #c2b49c;}
 
-
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	margin-right: 0;
-	margin-left: 0;
-}
-
-
-
-
-/* by: ZIMONH src: https://github.com/zimonh/Stars-Rank
-License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
-	.star-rank{
-		cursor: pointer;
-		margin: 0;
-		opacity:0;
-		position: absolute;
-		z-index: 1;
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 0;
+		margin-left: 0;
+		padding-top: 40px;
+		padding-bottom: 20px;
 	}
 
-	.rank{pointer-events: none;}
-
-	.rank > star > img,
-	.rank > star > halfstar > img{
-		height:auto;
-		position: absolute;
-		z-index:99;}
-
-	.rank > star > halfstar > img{position: relative;}
-
-	star{
-		display: inline-block;
-		position: relative;
-		text-align: left;}
-	input[type=range].star-rank {
-		-webkit-appearance: none;
-		position: relative;
-		top: 0;}
-
-	halfstar{
-		margin-left: 0;
-		overflow: hidden;
-		position: absolute;}
-
-	input[type=range].star-rank::-webkit-slider-runnable-track {
-		border: solid 1px black;
-		width: 100%;}
-	input[type=range].star-rank::-moz-range-track {
-		border: solid 1px black;
-		width: 100%;}
-	input[type=range].star-rank::-ms-track {
-		border: solid 1px black;
-		width: 100%;}
-	input[type=range].star-rank::-ms-thumb { width: 1px; }
-	input[type=range].star-rank::-moz-range-thumb { width: 1px; }
-	input[type=range].star-rank::-webkit-slider-thumb {
-		-webkit-appearance: none;
-		width: 1px;}
-
-
-
-
-
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 767.98px) {
-	.logo-text{margin-bottom: 10px;}
-	.navbar .container, .navbar .container-fluid{justify-content: center;}
-	.top-top-story{ height: 150px; }
-}
+	/* Medium devices (tablets, less than 992px)*/
+	@media (max-width: 767.98px) {
+	main{margin-top: 125px}
+		.logo-text{margin-bottom: 10px;}
+		.navbar .container, .navbar .container-fluid{justify-content: center;}
+	}
 
 
 
@@ -135,56 +70,43 @@ License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 		</header>
 		<main class="fluid-container">
 			
-			<div class="row top-top-story art1"></div>
-
-			<div class="row story art1"></div>
+			
 			<div class="row art1">
 				<div class="container text-center">
 					<h1 class="display-4 mb-4" >Title</h1>
 					<h2 class="display-4 mb-4" >Sub Title</h2>
 				</div>
 			</div>
-			<div class="row story art1" id="Diensten"></div>
+			<!-- <div class="row story art1" id="Diensten"></div> -->
 
-			<div class="row story art2"></div>
+			<!-- <div class="row story art2"></div> -->
 			<div class="row art2">
 				<div class="container text-center">
 					<h1 class="display-4 mb-4 text-white" >Diensten</h1>
 					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
 				</div>
 			</div>
-			<div class="row story art2" id="Tarieven"></div>
+			<!-- <div class="row story art2" id="Tarieven"></div> -->
 
-			<div class="row story art3"></div>
+			<!-- <div class="row story art3"></div> -->
 			<div class="row art3">
 				<div class="container text-center">
 					<h1 class="display-4 mb-4 text-white" >Tarieven</h1>
 					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
 				</div>
 			</div>
-			<div class="row story art3" id="Recenties"></div>
+			<!-- <div class="row story art3" id="Recenties"></div> -->
 			
-			<div class="row story art4"></div>
+			<!-- <div class="row story art4"></div> -->
 			<div class="row art4">
-				<div class="container text-center">
+				<div class="container text-center  text-white">
 					<h1 class="display-4 mb-4" >Recenties</h1>
-
-
-
-
-<div id="example" ></div>
-<div id="example2" ></div>
-<div id="example3" ></div>
-<div id="example4" ></div>
-
-
-
 					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
 				</div>
 			</div>
-			<div class="row story art4" id="Contact"></div>
+			<!-- <div class="row story art4" id="Contact"></div> -->
 
-			<div class="row story art5"></div>
+			<!-- <div class="row story art5"></div> -->
 			<div class="row art5">
 				<div class="container text-center">
 					<h1 class="display-4 mb-4  text-white" >Contact</h1>
@@ -194,107 +116,12 @@ License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 				</div>
 			</div>
 
-			<div class="row story art5"></div>
+			<!-- <div class="row story art5"></div> -->
 
 		</main>
 		<footer class="blog-footer">
 			<p>Geregistreerd K.v.K <a href="https://getbootstrap.com/">132451235</a> by <a href="https://zimonh.at">zimoh.at</a>.</p>
 			<p><a href="#">Back to top</a></p>
 		</footer>
-<script>
-		/* by: ZIMONH src: https://github.com/zimonh/Stars-Rank
-License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
-
-const MakeStarSlider = inp => {
-	let score = inp.maxstars / 2;
-	if(inp.score !== undefined) score = inp.score;
-
-	let	ff = '';
-	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) 	ff = '+ 10% - 10px';
-
-	document.querySelector(`#${inp.id}`).innerHTML = `
-<div id="${inp.id}sub" >
-	<div class="rank" ></div>
-	<input
-		val="${score}"
-		type="range"
-		min="0" max="${inp.maxstars}" step=".1"
-		class="star-rank"
-		oninput="this.parentNode.querySelector('.rank').innerHTML =
-		makeStars({score:Number(this.value),maxstars:${inp.maxstars},id:'${inp.id}'});"
-		onchange="scoreStars({score:Number(this.value),maxstars:${inp.maxstars},id:'${inp.id}'});">
-	</div>
-	<style>
-		#${inp.id}sub > .rank > star > halfstar > img,
-		#${inp.id}sub > .rank > star > img,
-		#${inp.id}sub > .rank > star,
-		#${inp.id}sub{ width: ${inp.height}px;}
-
-		#${inp.id}sub > .rank ,
-		#${inp.id}sub star,
-		#${inp.id}sub{height: ${inp.height}px;}
-
-		#${inp.id}sub > input[type=range].star-rank {
-			width: ${inp.height*inp.maxstars}px;
-			margin: calc(2% ${ff} - 2.5%) 0 0 0;
-			top: -${inp.height}px;}
-
-		#${inp.id}sub > input[type=range].star-rank::-webkit-slider-runnable-track {height: ${inp.height}px;}
-		#${inp.id}sub > input[type=range].star-rank::-moz-range-track {height: ${inp.height}px;}
-		#${inp.id}sub > input[type=range].star-rank::-ms-track {height: ${inp.height}px;}
-		@supports (-ms-ime-align: auto) {
-		#${inp.id}sub > input[type=range].star-rank { margin: calc(${(inp.height/43)-5}px - 1.5% ) 0 0 0; }
-		}
-		#${inp.id}sub{width: ${inp.height*inp.maxstars}px}</style>`;
-	document.querySelector(`#${inp.id} .rank`).innerHTML = makeStars({score:score,maxstars:inp.maxstars,init:true});};
-
-
-
-
-const scoreStars = inp =>{
-
-	//get the data here
-	console.log(inp.score,inp.maxstars,inp.id);
-
-};
-
-
-const makeStars = inp =>{
-
-	//Adjust settings here:
-	const
-		img_star 		= 'https://raw.githubusercontent.com/zimonh/Stars-Rank/master/fullstar.png',
-		img_emptystar 	= 'https://raw.githubusercontent.com/zimonh/Stars-Rank/master/emptystar.png';
-
-
-
-	if(inp.score <= inp.maxstars){
-		let rest = inp.score,
-			result = '',
-			temp = inp.maxstars;
-
-		while(temp>0){
-
-			if(rest >= 1){
-				result += `<star><img src="${img_star}"></star>`;
-				rest = rest-1;
-			}else if(rest<1&& rest>0){
-				result +=
-				`<star>
-					<img src="${img_emptystar}">
-					<halfstar style="width: calc(100% * ${rest})"><img src="${img_star}"></halfstar>
-				</star>`;
-				rest = 0;
-			}else result += `<star><img src="${img_emptystar}"></star>`;
-			temp--;
-
-		}
-		return result;
-	}
-};
-
-MakeStarSlider({height:50,maxstars:5,id:'example', score:4});
-MakeStarSlider({height:50,maxstars:5,id:'example2', score:4.4});
-MakeStarSlider({height:50,maxstars:5,id:'example3', score:4.8});
-	</script>	</body>
+</body>
 </html>
