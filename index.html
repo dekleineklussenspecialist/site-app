@@ -9,57 +9,8 @@
 		<title>Klus by ZIMONH</title>
 		<link href="bootstrap.min.css?123" rel="stylesheet" crossorigin="anonymous">
 		<script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		<link href="style.css?123" rel="stylesheet" crossorigin="anonymous">
 	</head>
-	<style>
-	h1{color:#2b1e13;}
-	header{
-		opacity: 0.99;
-		z-index: 999999999999999;
-		position: relative;
-	}
-	body{background-color: #c2b49c; 
-		position: relative; /*for scroll spy*/
-	}
-	main{margin-top: 75px;}
-	.blog-footer {
-		padding: 2.5rem 0;
-		color: #727272;
-		text-align: center;
-		background-color: #f9f9f9;
-		border-top: .05rem solid #e5e5e5;
-	}
-	.logos{max-width: 80vw; }
-	.small-logo{max-width: 600px;width: 30vw;}
-	.navbar{z-index: 9999;}
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		margin-right: 0;
-		margin-left: 0;
-		padding-top: 40px;
-		padding-bottom: 20px;
-		scroll-margin-top: 75px;
-	}
-	#navbar:target::before {
-		content: '';
-		display: block;
-		height: 180px;
-		margin-top: -180px;
-	}
-	.card{background-color: #f6f6f6;}
-	.bg-dark{background-color: #4e6791!important;}
-	/* Medium devices (tablets, less than 992px)*/
-	@media (max-width: 767.98px) {
-		.row {scroll-margin-top: 125px;}
-	main{margin-top: 125px}
-		.logo-text{margin-bottom: 10px;}
-		.navbar .container, .navbar .container-fluid{justify-content: center;}
-	}
-
-
-
-
-	</style>
 	<body
 		data-bs-spy="scroll"
 		data-bs-target="#navbar"
@@ -84,6 +35,7 @@
 
 							<!-- Hoofdmenu 2 -->
 							Tarieven
+
 							</a>
 						</li>
 						<li class="nav-item">
@@ -91,6 +43,7 @@
 
 							<!-- Hoofdmenu 3 -->
 							Recenties
+
 							</a>
 						</li>
 						<li class="nav-item">
@@ -98,6 +51,7 @@
 
 							<!-- Hoofdmenu 4 -->
 							Contact
+
 							</a>
 						</li>
 					</ul>
@@ -106,7 +60,7 @@
 		</header>
 		<main class="fluid-container">
 			<div class="row">
-				<div class="container text-center  mb-4">
+				<div class="container text-center mb-4">
 					<img src="logo2.svg"  class="small-logo mb-4"  alt="Circle with house and tools">
 					<div class="jumbotron" style="background-color: unset;">
 					<h1 class="display-4"><b>
@@ -114,30 +68,29 @@
 					<!-- Title -->
 					Voor uw kleine klussen!
 					
+
 					</b></h1>
 					<p class="lead">
 					
 					<!-- Sub title -->
 					Van reparaties to installaties.
 
+
 					</p>
 					</div>
 				</div>
 			</div>
 			<div class="row bg-dark" id="Diensten">
-				<div class="container text-center  mb-4">
+				<div class="container text-center mb-4">
 					<h1 class="display-4 mb-4 text-white" >
 					
 					<!-- Title menu 1-->
 					Diensten
+
 					</h1>
 					<div class="row justify-content-md-center">
 					  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
 						<div class="card">
-
-
-
-
 							<img src="img/door.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Card 1</h5>
@@ -195,10 +148,12 @@
 			</div>
 			<div class="row" id="Tarieven">
 				<div class="container text-center mb-4">
-					<h1 class="display-4" >
+					<h1 class="display-4 text-white" >
 
 					<!-- Title menu 2-->
 					Tarieven
+
+
 					</h1>
 					<div class="row justify-content-sm-center">
 						<div class="col-xs-12 col-sm-6">
@@ -212,16 +167,27 @@
 									<h5 class="card-title">
 									
 									<!-- Prijs -->
-									123$
+									€123,-
+
+
 									</h5>
 									<p class="card-text">
 
 									<!-- Prijs text 2 -->
-									321 ex btw.
+									321,- ex btw.
+
+
 									</p>
 									<hr>
 
-									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta blandit fermentum. Nulla sit amet consequat lacus, vitae pellentesque ex. Suspendisse ut blandit quam, vitae scelerisque tortor.</p>
+									<p class="card-text">
+
+									<!-- Prijs text 3 -->
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta blandit fermentum. Nulla sit amet consequat lacus, vitae pellentesque ex. Suspendisse ut blandit quam, vitae scelerisque tortor.
+
+
+									</p>
+
 								</div>
 							</div>
 						</div>
@@ -235,6 +201,8 @@
 
 					<!-- Title menu 3-->
 					Recenties
+
+
 					</h1>
 
 					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
@@ -246,6 +214,8 @@
 
 					<!-- Title menu 4-->
 					Contact
+
+
 					</h1>
 					<div style="overflow: hidden; transform: translateY(-85px);">
 					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScI8nM3MTh7VDUlWu8h-RtLSrhDCZEOknw5BhskQi9UftqeOQ/viewform?embedded=true" width="445" height="950" frameborder="0" marginheight="0" marginwidth="0" style="transform: translateY(85px);">Loading…</iframe>
@@ -254,7 +224,13 @@
 			</div>
 		</main>
 		<footer class="blog-footer">
-			<p>Geregistreerd K.v.K <a href="https://getbootstrap.com/">132451235</a> by <a href="https://zimonh.at">zimoh.at</a>.</p>
+			<p>Geregistreerd K.v.K <a href="https://getbootstrap.com/">
+
+			<!-- KvK nummer-->
+			132451235
+
+
+			</a> by <a href="https://zimonh.at">zimoh.at</a>.</p>
 			<p><a href="#">Terug naar boven</a></p>
 		</footer>
 </body>
