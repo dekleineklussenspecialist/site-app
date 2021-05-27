@@ -10,10 +10,10 @@
 		<!-- Title in browser tab -->
 		<title>Klus by ZIMONH</title>
 
-
-		<link href="bootstrap.min.css?123" rel="stylesheet" crossorigin="anonymous">
-		<script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		<script src="bootstrap/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="style.css?123" rel="stylesheet" crossorigin="anonymous">
+
 	</head>
 	<body
 		data-bs-spy="scroll"
@@ -21,7 +21,7 @@
 		data-bs-offset="350"
 		tabindex="0"
 		>
-		<header>
+	<header>
 			<nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 				<div class="container" >
 					<img src="logo.svg" class="logo-text" alt="De kleine klussen specialist">
@@ -65,7 +65,11 @@
 		<main class="fluid-container">
 			<div class="row">
 				<div class="container text-center mb-4">
-					<img src="logo2.svg"  class="small-logo mb-4"  alt="Circle with house and tools">
+					<div class="row justify-content-sm-center">
+						<div class="col-xs-12 col-sm-6">
+							<img src="logo2.svg"  class="small-logo"  alt="Circle with house and tools">
+						</div>
+					</div>
 					<div class="jumbotron" style="background-color: unset;">
 					<h1 class="display-4"><b>
 					
@@ -77,7 +81,7 @@
 					<p class="lead">
 					
 					<!-- Sub title -->
-					Van reparaties to installaties.
+					Van reparaties tot installaties.
 
 
 					</p>
@@ -241,7 +245,7 @@
 						</div>
 					</div>
 					<div class="row justify-content-sm-center">
-						<div class="col-sm-6">
+						<div class="col-sm-7 col-lg-5">
 							<div class="card  mb-4">
 								<div class="card-body">
 									<h5 class="card-title">
@@ -258,17 +262,17 @@
 
 
 									</p>
-									<hr>
-
-									<p class="card-text">
-
-									<!-- Prijs text 3 -->
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta blandit fermentum. Nulla sit amet consequat lacus, vitae pellentesque ex. Suspendisse ut blandit quam, vitae scelerisque tortor.
-
-
-									</p>
 
 								</div>
+
+								<div class="card-footer text-muted">
+
+								<!-- Prijs text 3 -->
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta blandit fermentum. Nulla sit amet consequat lacus, vitae pellentesque ex. Suspendisse ut blandit quam, vitae scelerisque tortor.
+
+
+								</div>
+
 							</div>
 						</div>
 
@@ -276,6 +280,11 @@
 				</div>
 			</div>
 			<div class="row bg-dark" id="Recenties">
+
+
+
+
+
 				<div class="container text-center">
 					<h1 class="display-4 mb-4 text-white">
 
@@ -284,8 +293,96 @@
 
 
 					</h1>
+					<div class="row justify-content-sm-center">
 
-					<img src="logo2.svg"  class="logos"  alt="Circle with house and tools">
+
+
+						<div class="col-sm-7 col-lg-5">
+							<div class="card  mb-4  bg-transparent text-white">
+								<div class="accordion-item">
+
+									
+									<div class="card-body">
+										<a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#review1" aria-expanded="true" aria-controls="review1">
+										<div class="star-container">
+
+											<!-- Sterren Review 1 -->
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_half.svg">
+
+
+										</div>
+										
+
+
+									    <!-- Quote Review 1 -->
+										"Snel, vriendelijk en mooi eindresultaat!"
+									    
+									    </a>
+									</div>
+									<div class="card-footer collapse text-white" id="review1">
+
+										<p>
+
+										<!-- Text Review 1 -->
+										We wilden de kast in de woonkamer laten repareren. De zijkant was helemaal losgekomen. Na een telefoontje snel een afspraak kunnen regelen. Eerst wat foto's opgestuurd en vervolgens is alles in 1 bezoek geregeld. Er is geen spoor meer te zien van de beschadeging. Top!
+										
+										</p>
+									</div>
+								</div>
+
+
+
+
+								<div class="accordion-item">
+									<div class="card-body accordion-header">
+										<div class="star-container">
+
+											<!-- Sterren Review 1 -->
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_full.svg">
+											<img width="32px" src="star_half.svg">
+
+
+										</div>
+										
+
+									    <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#review2" aria-expanded="true" aria-controls="review2">
+
+									    <!-- Quote Review 1 -->
+										"Snel, vriendelijk en mooi eindresultaat!"
+									    
+									    </a>
+									</div>
+									<div class="card-footer collapse text-white" id="review2">
+
+										<p>
+
+										<!-- Text Review 1 -->
+										We wilden de kast in de woonkamer laten repareren. De zijkant was helemaal losgekomen. Na een telefoontje snel een afspraak kunnen regelen. Eerst wat foto's opgestuurd en vervolgens is alles in 1 bezoek geregeld. Er is geen spoor meer te zien van de beschadeging. Top!
+										
+										</p>
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+							</div>
+						</div>
+
+
+
+					</div>
 				</div>
 			</div>
 			<div class="row art5" id="Contact">
