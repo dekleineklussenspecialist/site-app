@@ -13,13 +13,15 @@ for(review of reviews){
 
 	const reviewItem = 
 	`<div class="accordion-item bg-transparent">
-		<button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#review${reviewIndex}" aria-expanded="true" aria-controls="review${reviewIndex}">
+
+		<button class="accordion-button bg-transparent ${reviewIndex === 0 ? 'true' : 'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#review${reviewIndex}" aria-expanded="${reviewIndex === 0 ? 'true' : 'false'}" aria-controls="review${reviewIndex}">
 			<div class="row text-center w-100 pt-2 pb-1">
 				<div class="star-container col-12">${stars}</div>
 				<span class="quote mt-2 col-12">"${review.quote}"</span>
 			</div>
 		</button>
-		<div class="collapse ${reviewIndex === 0 ? 'show' : ''}  accordion-collapse" data-bs-parent="#reviews" id="review${reviewIndex}">
+
+		<div class="accordion-collapse ${reviewIndex === 0 ? 'show' : ''} collapse" data-bs-parent="#reviews" id="review${reviewIndex}">
 			<div class="text-white pt-3 accordion-body">${review.text}</div>
 		</div>
 	</div>`;
@@ -34,10 +36,7 @@ for(card of cards){
 	const mobileCard = 
 	`<div class="card mb-3">
 	<div class="row">
-		<div class="col-sm-5 col-xs-6 mobile-card-img" style="
-	background-size: cover; background-image:url('${card.image}');">
-			
-		</div>
+		<div class="col-sm-5 col-xs-6 mobile-card-img" style="background-size: cover; background-image:url('${card.image}');"></div>
 		<div class="col-sm-7  col-xs-6">
 			<div class="card-body d-block h-100">
 				<table style="height: 100%; width: 100%;">
@@ -53,7 +52,8 @@ for(card of cards){
 
 	const desktopCard = `<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
 	<div class="card">
-		<img src="${card.image}" class="card-img-top" alt="...">
+
+		<div class="col-sm-5 col-xs-6 card-img card-img-top" style="background-size: cover; background-image:url('${card.image}');"></div>
 		<div class="card-body">
 			<h5 class="card-title">${card.title}</h5>
 			<p class="card-text">${card.subtitle}</p>
