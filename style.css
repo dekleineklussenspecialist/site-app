@@ -11,10 +11,10 @@ body{background-color: #c2b49c;
 main{margin-top: 75px;}
 .blog-footer {
 	padding: 2.5rem 0;
-	color: #727272;
 	text-align: center;
-	background-color: #f9f9f9;
+	background-color: white;
 	border-top: .05rem solid #e5e5e5;
+	position: relative;
 }
 .logos{max-width: 80vw; }
 .small-logo{max-width: 600px;width: 30vw;
@@ -45,7 +45,12 @@ main{margin-top: 75px;}
 }
 .mobile-card-img{min-height: 250px;}
 .card-img{min-height: 250px;}
-
+.iframe{
+	background-color: #fafafa;
+	border-radius: 32px;
+	padding: 13px 0;
+	width: 445px;
+	display: inline-block;}
 
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 767.98px) {

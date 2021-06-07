@@ -68,8 +68,4 @@ for(card of cards){
 
 }
 
-var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-dataSpyList.forEach(function (dataSpyEl) {
-  bootstrap.ScrollSpy.getInstance(dataSpyEl)
-    .refresh()
-})
+bootstrap.ScrollSpy.getInstance(document.querySelector('[data-bs-spy="scroll"]')).refresh();
